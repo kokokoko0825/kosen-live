@@ -21,7 +21,7 @@ export const vars = createThemeContract({
 
 createGlobalTheme(":root", vars, {
   color: {
-    background: "#FFFFFF",
+    background: "#000000",
     text: "#3C4063",
     lightText: "#FFFFFF",
     highlight: "#8467D7",

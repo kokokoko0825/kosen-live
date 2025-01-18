@@ -3,7 +3,7 @@ import { style } from "@vanilla-extract/css";
 
 export const hero = style({
     display: "flex",
-    width: "100vw",
+    width: "1440px",
     height: "1024px",
     flexDirection: "column",
     alignItems: "center",
@@ -11,6 +11,7 @@ export const hero = style({
     backgroundPosition: "50%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    boxSizing: "border-box",
 });
 
 export const yearConatainer = style({
