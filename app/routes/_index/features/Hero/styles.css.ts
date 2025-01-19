@@ -1,13 +1,16 @@
 import { vars } from "app/styles/theme.css";
 import { style } from "@vanilla-extract/css";
 
+//const cubicBezier = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
+
 export const hero = style({
     display: "flex",
-    width: "1440px",
+    //width: "1440px",
     height: "1024px",
     flexDirection: "column",
     alignItems: "center",
     background: "url(/images/poster2.jpg)",
+    backgroundColor: vars.color.background,
     backgroundPosition: "50%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -48,6 +51,11 @@ export const title = style({
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    /*
+    overflow: 'hidden',
+    transform: 'translate(-100%, 0)',
+    transition: `transform ${cubicBezier} 0.5s`,
+    */
 });
 
 export const placeContainer = style({

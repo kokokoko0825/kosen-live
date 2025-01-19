@@ -3,12 +3,12 @@ import { vars } from "~/styles/theme.css";
 
 export const page1 = style({
     display: "flex",
-    width: "1440px",
+    //width: "1440px",
     height: "1024px",
     padding: "0 0.625rem",
     flexDirection: "column",
     alignItems: "flex-start",
-    gap: "3.125rem",
+    gap: "1.25rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
 });
@@ -96,6 +96,6 @@ export const subText = style({
     color: vars.color.lightText,
     textAlign: "center",
     fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "2.5rem",
+    fontSize: "1.875rem",
     fontWeight: 400,
 });
