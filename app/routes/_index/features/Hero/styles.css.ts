@@ -1,7 +1,18 @@
 import { vars } from "app/styles/theme.css";
-import { style } from "@vanilla-extract/css";
+import { style, keyframes } from "@vanilla-extract/css";
 
 //const cubicBezier = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
+
+const fadeIn = keyframes({
+    from: {
+        opacity: 0,
+        //transform: "translateX(-100%)",
+    },
+    to: {
+        opacity: 1,
+        //transform: "translateX(0)",
+    },
+});
 
 export const hero = style({
     display: "flex",
@@ -47,15 +58,23 @@ export const title = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "10.938rem",
     fontWeight: 400,
-    background: "linear-gradient(90deg, #00FFFF 0%, #EEFF00 100%)",
-    backgroundClip: "text",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
+    //animation: `${slideIn} 2s`,
+    display: "inline-block",
     /*
     overflow: 'hidden',
     transform: 'translate(-100%, 0)',
     transition: `transform ${cubicBezier} 0.5s`,
     */
+});
+
+export const letter = style({
+    display: "inline-block",
+    background: "linear-gradient(90deg, #00FFFF 0%, #EEFF00 100%)",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+    opacity: 0,
+    animation: `${fadeIn} 0.5s ease-out forwards`,
 });
 
 export const placeContainer = style({
