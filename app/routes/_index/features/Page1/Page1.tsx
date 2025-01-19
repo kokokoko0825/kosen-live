@@ -18,11 +18,11 @@ export function Page1(): ReactNode {
                     <div className={styles.text}>Day2 15:30 ~</div>
                 </div>
             </div>
-            <div className={styles.price}>
-                <div className={styles.subTitle}>Price</div>
-                <div className={styles.ticketPrice}>
-                    <div className={styles.text}>1 day ticket ¥1500+1dr</div>
-                    <div className={styles.text}>2 days ticcket ¥1500+1dr</div>
+            <div className={styles.place}>
+                <div className={styles.subTitle}>Place:</div>
+                <div className={styles.placeContainer}>
+                    <a href={"https://maps.app.goo.gl/6KPiigfwDSoCWDR77"} target="blank" className={styles.text}>Suzuka Sound Stage</a>
+                    <div className={styles.subText}>(鈴鹿市磯山1-9-8)</div>
                 </div>
             </div>
         </div>

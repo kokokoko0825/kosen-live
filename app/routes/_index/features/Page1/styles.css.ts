@@ -56,7 +56,7 @@ export const openTime = style({
     gap: "0.625rem",
 });
 
-export const price = style({
+export const place = style({
     display: "flex",
     padding: "0.625rem 0.625rem 0.625rem 18.75rem",
     alignItems: "flex-start",
@@ -64,11 +64,11 @@ export const price = style({
     alignSelf: "stretch",
 });
 
-export const ticketPrice = style({
+export const placeContainer = style({
     display: "flex",
     padding: "0.625rem",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
     gap: "0.625rem",
 });
 
@@ -88,5 +88,14 @@ export const text = style({
     textAlign: "center",
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "4rem",
+    fontWeight: 400,
+    textDecoration: "none",
+});
+
+export const subText = style({
+    color: vars.color.lightText,
+    textAlign: "center",
+    fontFamily: vars.typography.fontFamily.roboto,
+    fontSize: "2.5rem",
     fontWeight: 400,
 });
