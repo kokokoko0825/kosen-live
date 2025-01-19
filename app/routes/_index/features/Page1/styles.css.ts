@@ -3,7 +3,7 @@ import { vars } from "~/styles/theme.css";
 
 export const page1 = style({
     display: "flex",
-    //width: "1440px",
+    width: "100%",
     height: "1024px",
     padding: "0 0.625rem",
     flexDirection: "column",

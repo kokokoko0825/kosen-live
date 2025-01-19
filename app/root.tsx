@@ -12,7 +12,7 @@ import { LinksFunction, MetaFunction } from "@remix-run/cloudflare";
 
 export function Layout({ children }: { children: React.ReactNode }): ReactNode {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <Meta />
         <Links />

@@ -3,7 +3,7 @@ import { style, keyframes } from "@vanilla-extract/css";
 
 //const cubicBezier = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
 
-const fadeIn = keyframes({
+const fadeInSlide = keyframes({
     from: {
         opacity: 0,
         //transform: "translateX(-100%)",
@@ -16,7 +16,7 @@ const fadeIn = keyframes({
 
 export const hero = style({
     display: "flex",
-    //width: "1440px",
+    width: "100%",
     height: "1024px",
     flexDirection: "column",
     alignItems: "center",
@@ -54,27 +54,10 @@ export const titleContainer = style({
 });
 
 export const title = style({
-    textAlign: "center",
-    fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "10.938rem",
-    fontWeight: 400,
-    //animation: `${slideIn} 2s`,
-    display: "inline-block",
-    /*
-    overflow: 'hidden',
-    transform: 'translate(-100%, 0)',
-    transition: `transform ${cubicBezier} 0.5s`,
-    */
-});
-
-export const letter = style({
-    display: "inline-block",
-    background: "linear-gradient(90deg, #00FFFF 0%, #EEFF00 100%)",
-    backgroundClip: "text",
-    WebkitBackgroundClip: "text",
-    color: "transparent",
+    content: "url(/images/title.svg)",
     opacity: 0,
-    animation: `${fadeIn} 0.5s ease-out forwards`,
+    animation: `${fadeInSlide} 5s ease-in forwards`,
+    padding: "33px",
 });
 
 export const placeContainer = style({
