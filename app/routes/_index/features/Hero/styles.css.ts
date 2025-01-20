@@ -45,7 +45,7 @@ export const yearConatainer = style({
     alignSelf: "stretch",
     '@media': {
         'screen and (max-width: 767px)': {
-            padding: "0.625rem",
+            padding: "10rem 0.625rem 0.625rem 0.625rem",
             alignItems: "center",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
@@ -126,4 +126,35 @@ export const placeText = style({
             fontSize: "36px",
         }
     }
+});
+
+export const event = style({
+    display: "flex",
+    padding: "4.375rem 1.8125rem",
+    width: "0%",
+    '@media': {
+        'screen and (max-width: 767px)': {
+            width: "auto",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: "0.625rem",
+            alignSelf: "stretch",
+        },
+    }
+});
+
+export const eventText = style({
+    color: vars.color.lightText,
+    textAlign: "center",
+    fontFamily: vars.typography.fontFamily.roboto,
+    fontSize: "1rem",
+});
+
+export const eventDateContainer = style({
+    display: "flex",
+    padding: "0.625rem",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "0.625rem",
+    alignSelf: "stretch",
 });
