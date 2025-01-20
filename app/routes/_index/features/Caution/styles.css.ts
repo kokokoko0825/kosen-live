@@ -56,6 +56,7 @@ export const title = style({
 
 export const textContainer = style({
     display: "flex",
+    flexDirection: "column",
     padding: "0.625rem 0.625rem 10rem 8.75rem",
     alignItems: "flex-start",
     gap: "1.875rem",

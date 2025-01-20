@@ -55,7 +55,7 @@ export const title = style({
 
 export const price = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 0.625rem 12.5rem",
+    padding: "0.625rem 0.625rem 0.625rem 18.75rem",
     alignItems: "flex-start",
     gap: "1.875rem",
     alignSelf: "stretch",
