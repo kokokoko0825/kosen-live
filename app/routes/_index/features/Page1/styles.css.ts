@@ -125,7 +125,6 @@ export const text = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "4rem",
     fontWeight: 400,
-    textDecoration: "none",
     '@media': {
         'screen and (max-width: 720px)': {
             fontSize: "20px",
