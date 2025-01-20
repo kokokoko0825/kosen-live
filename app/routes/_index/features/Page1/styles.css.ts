@@ -3,7 +3,7 @@ import { vars } from "~/styles/theme.css";
 
 export const page1 = style({
     display: "flex",
-    width: "100%",
+    width: "100vw",
     height: "1024px",
     padding: "0 0.625rem",
     flexDirection: "column",
@@ -11,6 +11,12 @@ export const page1 = style({
     gap: "1.25rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
+    //marginLeft: "calc(-50vw + 50%)",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            height: "844px",
+        }
+    }
 });
 
 export const about = style({
@@ -19,6 +25,11 @@ export const about = style({
     alignItems: "center",
     gap: "0.625rem",
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            justifyContent: "center",
+        }
+    }
 });
 
 export const title = style({
@@ -29,6 +40,11 @@ export const title = style({
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "32px",
+        }
+    }
 });
 
 export const date = style({
@@ -37,6 +53,11 @@ export const date = style({
     alignItems: "center",
     gap: "1.875rem",
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "0.625rem 3.75rem",
+        }
+    }
 });
 
 export const open = style({
@@ -46,6 +67,11 @@ export const open = style({
     gap: "1.875rem",
     flexShrink: 0,
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "0.625rem 3.75rem",
+        }
+    }
 });
 
 export const openTime = style({
@@ -62,6 +88,11 @@ export const place = style({
     alignItems: "flex-start",
     gap: "1.875rem",
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "0.625rem 3.75rem",
+        }
+    }
 });
 
 export const placeContainer = style({
@@ -81,6 +112,11 @@ export const subTitle = style({
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "24px",
+        }
+    }
 });
 
 export const text = style({
@@ -90,6 +126,11 @@ export const text = style({
     fontSize: "4rem",
     fontWeight: 400,
     textDecoration: "none",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "20px",
+        }
+    }
 });
 
 export const subText = style({
@@ -98,4 +139,9 @@ export const subText = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "1.875rem",
     fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "12px",
+        }
+    }
 });

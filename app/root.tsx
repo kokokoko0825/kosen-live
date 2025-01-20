@@ -18,7 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }): ReactNode {
         <Links />
         <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"></link>
       </head>
-      <body>
+      <body style={{padding: 0, margin: 0}}>
         {children}
         <ScrollRestoration />
         <Scripts />

@@ -3,13 +3,15 @@ import { vars } from "~/styles/theme.css";
 
 export const page2 = style({
     display: "flex",
-    width: "100%",
+    width: "100vw",
+    height: "auto",
     padding: "0.625rem",
     flexDirection: "column",
     alignItems: "center",
     gap: "0.625rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
+    //marginLeft: "calc(-50vw + 50%)",
 });
 
 export const performers = style({
@@ -18,6 +20,12 @@ export const performers = style({
     alignItems: "center",
     gap: "0.625rem",
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "3.75rem 0.625rem 0.625rem 0.625rem",
+            justifyContent: "center",
+        }
+    }
 });
 
 export const title = style({
@@ -28,6 +36,11 @@ export const title = style({
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "32px",
+        }
+    }
 });
 
 export const list = style({
@@ -47,6 +60,11 @@ export const subTitle8 = style({
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "24px",
+        }
+    }
 });
 
 export const subTitle9 = style({
@@ -57,6 +75,11 @@ export const subTitle9 = style({
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "24px",
+        }
+    }
 });
 
 export const bandList = style({
@@ -65,6 +88,11 @@ export const bandList = style({
     flexDirection: "column",
     alignItems: "center",
     gap: "0.625rem",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "0 0.625rem",
+        }
+    }
 });
 
 export const textEng = style({
@@ -72,6 +100,11 @@ export const textEng = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "2.813rem",
     fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "20px",
+        }
+    }
 });
 
 export const textJap = style({
@@ -79,6 +112,11 @@ export const textJap = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "1.875rem",
     fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "16px",
+        }
+    }
 });
 
 export const andMore = style({
@@ -86,4 +124,9 @@ export const andMore = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontSize: "2.25rem",
     fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "14px",
+        }
+    }
 });

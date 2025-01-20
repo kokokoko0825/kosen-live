@@ -16,7 +16,7 @@ const fadeInSlide = keyframes({
 
 export const hero = style({
     display: "flex",
-    width: "100%",
+    width: "100vw",
     height: "1024px",
     flexDirection: "column",
     alignItems: "center",
@@ -26,14 +26,27 @@ export const hero = style({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     boxSizing: "border-box",
+    //marginLeft: "calc(-50vw + 50%)",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            height: "844px",
+        }
+    }
+    
 });
 
 export const yearConatainer = style({
     display: "flex",
-    padding: "6.875rem 0.625rem 0 6.25rem",
+    padding: "6.25rem 0.625rem 0 6.25rem",
     alignItems: "flex-end",
     gap: "0.625rem",
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "0.625rem",
+            alignItems: "center",
+        }
+    }
 });
 
 export const yearText = style({
@@ -42,15 +55,22 @@ export const yearText = style({
     textAlign: "center",
     fontFamily: vars.typography.fontFamily.roboto,
     fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "12px",
+        }
+    }
 });
 
 export const titleContainer = style({
     display: "flex",
+    width: "100%",
     padding: "0 0.625rem",
     justifyContent: "center",
     alignItems: "center",
     gap: "0.625rem",
     alignSelf: "stretch",
+    boxSizing: "border-box",
 });
 
 export const title = style({
@@ -58,6 +78,12 @@ export const title = style({
     opacity: 0,
     animation: `${fadeInSlide} 5s ease-in forwards`,
     padding: "33px",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            width: "auto",
+            height: "40px",
+        }
+    }
 });
 
 export const placeContainer = style({
@@ -68,6 +94,11 @@ export const placeContainer = style({
     gap: "0.625rem",
     flexShrink: 0,
     alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 720px)': {
+            padding: "0.625rem",
+        }
+    }
 });
 
 export const placeText = style({
@@ -76,4 +107,9 @@ export const placeText = style({
     textAlign: "center",
     fontFamily: vars.typography.fontFamily.roboto,
     fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 720px)': {
+            fontSize: "12px",
+        }
+    }
 });
