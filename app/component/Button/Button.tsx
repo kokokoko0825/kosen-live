@@ -13,7 +13,7 @@ export function Button(): ReactNode {
             <div className={styles.header}>
                 {menuOpen && (
                     <div className={styles.menu}>
-                        <div className={styles.menuItem}>Information</div>
+                        <a className={styles.menuItem} href={"app/component/Information"}>Information</a>
                         <div className={styles.menuItem}>TimeTable</div>
                         <div className={styles.menuItem}>Ticket</div>
                     </div>

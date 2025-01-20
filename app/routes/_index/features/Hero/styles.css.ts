@@ -39,17 +39,17 @@ export const hero = style({
 
 export const yearConatainer = style({
     display: "flex",
-    padding: "6.25rem 0.625rem 0 6.25rem",
+    padding: "10.84rem 0.625rem 0 6.25rem",
     alignItems: "flex-end",
     gap: "0.625rem",
     alignSelf: "stretch",
     '@media': {
         'screen and (max-width: 767px)': {
-            padding: "10rem 0.625rem 0.625rem 0.625rem",
+            padding: "13.37rem 0.625rem 0.625rem 0.625rem",
             alignItems: "center",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
-            padding: "0 0.625rem 0 3.125rem"
+            padding: "5.625rem 0.625rem 0 3.125rem"
         }
     }
 });
