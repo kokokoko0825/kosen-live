@@ -14,6 +14,7 @@ export function Layout({ children }: { children: React.ReactNode }): ReactNode {
   return (
     <html lang="ja" style={{ margin: 0, padding: 0, }}>
       <head>
+        <meta name="google-site-verification" content="brDkeRhoxktrjCiqqUefNlNyOKLGHk0Cik9q9MzLv2E" />
         <Meta />
         <Links />
         <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"></link>
