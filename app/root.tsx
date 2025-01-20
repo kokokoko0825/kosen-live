@@ -12,13 +12,13 @@ import { LinksFunction, MetaFunction } from "@remix-run/cloudflare";
 
 export function Layout({ children }: { children: React.ReactNode }): ReactNode {
   return (
-    <html lang="ja">
+    <html lang="ja" style={{ margin: 0, padding: 0, }}>
       <head>
         <Meta />
         <Links />
         <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"></link>
       </head>
-      <body style={{padding: 0, margin: 0}}>
+      <body style={{ margin: 0, padding: 0, }}>
         {children}
         <ScrollRestoration />
         <Scripts />

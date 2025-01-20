@@ -16,7 +16,7 @@ const fadeInSlide = keyframes({
 
 export const hero = style({
     display: "flex",
-    width: "100vw",
+    width: "100%",
     height: "1024px",
     flexDirection: "column",
     alignItems: "center",
@@ -28,10 +28,12 @@ export const hero = style({
     boxSizing: "border-box",
     //marginLeft: "calc(-50vw + 50%)",
     '@media': {
-        'screen and (max-width: 720px)': {
-            height: "844px",
+        'screen and (max-width: 767px)': {
+            //height: "844px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
         }
-    }
+    },
     
 });
 
@@ -42,9 +44,12 @@ export const yearConatainer = style({
     gap: "0.625rem",
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             padding: "0.625rem",
             alignItems: "center",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "0 0.625rem 0 3.125rem"
         }
     }
 });
@@ -56,8 +61,11 @@ export const yearText = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "12px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "32px",
         }
     }
 });
@@ -76,12 +84,15 @@ export const titleContainer = style({
 export const title = style({
     content: "url(/images/title.svg)",
     opacity: 0,
-    animation: `${fadeInSlide} 5s ease-in forwards`,
+    animation: `${fadeInSlide} 3s ease-in forwards`,
     padding: "33px",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px )': {
             width: "auto",
             height: "40px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            height: "96px",
         }
     }
 });
@@ -95,7 +106,7 @@ export const placeContainer = style({
     flexShrink: 0,
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             padding: "0.625rem",
         }
     }
@@ -108,8 +119,11 @@ export const placeText = style({
     fontFamily: vars.typography.fontFamily.roboto,
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "12px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "36px",
         }
     }
 });

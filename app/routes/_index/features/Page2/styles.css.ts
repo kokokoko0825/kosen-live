@@ -3,7 +3,7 @@ import { vars } from "~/styles/theme.css";
 
 export const page2 = style({
     display: "flex",
-    width: "100vw",
+    width: "100%",
     height: "auto",
     padding: "0.625rem",
     flexDirection: "column",
@@ -11,18 +11,21 @@ export const page2 = style({
     gap: "0.625rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
-    //marginLeft: "calc(-50vw + 50%)",
 });
 
 export const performers = style({
     display: "flex",
-    padding: "0.625rem 6.25rem",
+    padding: "8rem 6.25rem",
     alignItems: "center",
-    gap: "0.625rem",
+    gap: "1.25rem",
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
-            padding: "3.75rem 0.625rem 0.625rem 0.625rem",
+        'screen and (max-width: 767px)': {
+            padding: "3.75rem 0.625rem 3rem 0.625rem",
+            justifyContent: "center",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "5rem 0.625rem 5rem 3.125rem",
             justifyContent: "center",
         }
     }
@@ -37,15 +40,18 @@ export const title = style({
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "32px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "64px",
         }
     }
 });
 
 export const list = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 3.75rem 0.625rem",
+    padding: "0.625rem 0.625rem 2rem 0.625rem",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
@@ -61,8 +67,11 @@ export const subTitle8 = style({
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "24px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "36px",
         }
     }
 });
@@ -76,8 +85,11 @@ export const subTitle9 = style({
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "24px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "36px",
         }
     }
 });
@@ -89,7 +101,7 @@ export const bandList = style({
     alignItems: "center",
     gap: "0.625rem",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             padding: "0 0.625rem",
         }
     }
@@ -101,8 +113,11 @@ export const textEng = style({
     fontSize: "2.813rem",
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "20px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "32px",
         }
     }
 });
@@ -113,8 +128,11 @@ export const textJap = style({
     fontSize: "1.875rem",
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "16px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "24px",
         }
     }
 });
@@ -125,8 +143,11 @@ export const andMore = style({
     fontSize: "2.25rem",
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "14px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "22px",
         }
     }
 });

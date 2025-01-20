@@ -6,11 +6,9 @@ import { Page2 } from "./features/Page2/Page2";
 export default function Page(): ReactNode {
     return (
         <>
-            <main style={{ display: "block" }}>
                 <Hero />
                 <Page1 />
                 <Page2 />
-            </main>
         </>
     );
 }

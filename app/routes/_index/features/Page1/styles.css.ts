@@ -3,30 +3,33 @@ import { vars } from "~/styles/theme.css";
 
 export const page1 = style({
     display: "flex",
-    width: "100vw",
-    height: "1024px",
-    padding: "0 0.625rem",
+    width: "100%",
+    height: "auto",
+    padding: "0.625rem 0.625rem",
     flexDirection: "column",
     alignItems: "flex-start",
     gap: "1.25rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
-    //marginLeft: "calc(-50vw + 50%)",
     '@media': {
-        'screen and (max-width: 720px)': {
-            height: "844px",
+        'screen and (max-width: 767px)': {
+            //height: "844px",
         }
     }
 });
 
 export const about = style({
     display: "flex",
-    padding: "3.125rem 6.25rem 3.125rem 6.25rem",
+    padding: "3rem 6.25rem",
     alignItems: "center",
     gap: "0.625rem",
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
+            justifyContent: "center",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "5rem 0.625rem 5rem 3.125rem",
             justifyContent: "center",
         }
     }
@@ -41,21 +44,27 @@ export const title = style({
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "32px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "64px",
         }
     }
 });
 
 export const date = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 0.625rem 18.75rem",
+    padding: "2rem 0.625rem 0.625rem 18.75rem",
     alignItems: "center",
     gap: "1.875rem",
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             padding: "0.625rem 3.75rem",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "0.625rem 3.75rem 0.625rem 15.625rem",
         }
     }
 });
@@ -68,8 +77,11 @@ export const open = style({
     flexShrink: 0,
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             padding: "0.625rem 3.75rem",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "0.625rem 3.75rem 0.625rem 15.625rem",
         }
     }
 });
@@ -89,8 +101,11 @@ export const place = style({
     gap: "1.875rem",
     alignSelf: "stretch",
     '@media': {
-        'screen and (max-width: 720px)': {
-            padding: "0.625rem 3.75rem",
+        'screen and (max-width: 767px)': {
+            padding: "0.625rem 3.75rem 3rem 3.75rem",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "0.625rem 3.75rem 5rem 15.625rem",
         }
     }
 });
@@ -113,8 +128,11 @@ export const subTitle = style({
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "24px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "36px",
         }
     }
 });
@@ -126,8 +144,11 @@ export const text = style({
     fontSize: "4rem",
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "20px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "32px",
         }
     }
 });
@@ -139,8 +160,11 @@ export const subText = style({
     fontSize: "1.875rem",
     fontWeight: 400,
     '@media': {
-        'screen and (max-width: 720px)': {
+        'screen and (max-width: 767px)': {
             fontSize: "12px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "20px",
         }
     }
 });
