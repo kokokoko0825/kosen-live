@@ -18,6 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }): ReactNode {
         <Meta />
         <Links />
         <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"></link>
+        <title>2025 鈴鹿高専卒業ライブ</title>
       </head>
       <body style={{ margin: 0, padding: 0, }}>
         {children}
