@@ -1,9 +1,11 @@
 import type { ReactNode } from "react";
 import * as styles from "./styles.css";
+import { Button } from "~/component/Button";
 
 export function Hero(): ReactNode {
     return (
         <div className={styles.hero}>
+            <Button />
             <div className={styles.yearConatainer}>
                 <div className={styles.yearText}>2025鈴鹿高専卒業ライブ</div>
             </div>

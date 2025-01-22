@@ -4,7 +4,7 @@ import { style,keyframes } from "@vanilla-extract/css";
 const menuSlideIn = keyframes({
     from: {
         opacity: 0,
-        transform: "translateX(-100%)",
+        transform: "translateX(100%)",
     },
     to: {
         opacity: 1,
@@ -16,7 +16,7 @@ export const header = style({
   display: "flex",
     padding: "14px 20px",
     justifyContent: "flex-end",
-    alignItems: "flex-start",
+    alignItems: "center",
     gap: "10px",
     alignSelf: "stretch",
 });
@@ -49,8 +49,9 @@ export const menuButtonLine = style({
 });
 
 export const menu = style({
-  width: "50%",
-  maxWidth: "300px",
+  width: "auto",
+  flexDirection: "column",
+  alignItems: "center",
   backgroundColor: vars.color.background,
   boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
   animation: `${menuSlideIn} 0.3s ease-out forwards`,
@@ -67,4 +68,9 @@ export const menuItem = style({
     backgroundColor: vars.color.lightText,
     color: vars.color.background,
   },
+  '@media': {
+    'screen and (max-width: 720px)': {
+      fontSize: "0.625rem",
+      }
+    }
 });
