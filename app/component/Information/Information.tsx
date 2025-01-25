@@ -6,23 +6,26 @@ import * as styles from "./styles.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export function Information(): ReactNode {
+    
     useEffect(() => {
-        gsap.fromTo(
-            `.${styles.title}`,
-            { opacity: 0, x: -100 },
-            {
-                opacity: 1,
-                x: 0,
-                duration: 3,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: `.${styles.information}`,
-                    start: "top 80%",
-                    end: "top 30%",
-                    scrub: true,
-                },
-            }
-        );
+        if (typeof document !== "undefined") {
+            gsap.fromTo(
+                `.${styles.title}`,
+                { opacity: 0, x: -100 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 3,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: `.${styles.information}`,
+                        start: "top 80%",
+                        end: "top 30%",
+                        scrub: true,
+                    },
+                }
+            );
+        }
     }, []);
 
     return (
@@ -30,8 +33,17 @@ export function Information(): ReactNode {
             <div className={styles.information}>
                 <div className={styles.title}>Information</div>
             </div>
-            <div className={styles.list}>
-                <div className={styles.textEng}>coming soon...</div>
+            <div className={styles.infoContainer}>
+                <div className={styles.list}>
+                    <div className={styles.date}>2025.01.25</div>
+                    <div className={styles.newest}>new!</div>
+                    <div className={styles.textEng}>Day my dream 参戦決定!</div>
+                </div>
+                <div className={styles.list}>
+                    <div className={styles.date}>2025.01.21</div>
+                    <div className={styles.newest}>    </div>
+                    <div className={styles.textEng}>2025鈴鹿高専卒業ライブ開催決定!</div>
+                </div>
             </div>
         </div>
     );

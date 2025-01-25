@@ -5,6 +5,7 @@ import { Page2 } from "./features/Page2/Page2";
 import { Ticket } from "app/component/Ticket/Ticket";
 import { Timetable } from "~/component/Timetable";
 import { Caution } from "./features/Caution/Caution";
+import { Information } from "~/component/Information";
 
 export default function Page(): ReactNode {
     useEffect(() => {
@@ -17,6 +18,9 @@ export default function Page(): ReactNode {
         <>
             <div id = "hero">
                 <Hero />
+            </div>
+            <div id="information">
+                <Information />
             </div>
             <Page1 />
             <Page2 />

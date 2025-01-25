@@ -7,7 +7,7 @@ export const page3 = style({
     height: "auto",
     padding: "0.625rem",
     flexDirection: "column",
-    alignItems: "center",
+    alignItems: "flex-start",
     gap: "0.625rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
@@ -15,13 +15,13 @@ export const page3 = style({
 
 export const information = style({
     display: "flex",
-    padding: "8rem 6.25rem",
-    alignItems: "center",
+    padding: "0.625rem 6.25rem",
+    alignItems: "flex-start",
     gap: "1.25rem",
     alignSelf: "stretch",
     '@media': {
         'screen and (max-width: 767px)': {
-            padding: "3.75rem 0.625rem 3rem 0.625rem",
+            padding: "3.75rem 0.625rem 2rem 0.625rem",
             justifyContent: "center",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
@@ -49,60 +49,64 @@ export const title = style({
     }
 });
 
+export const infoContainer = style({
+    display: "flex",
+    padding: "6.25rem 0.625rem 6.25rem 6.25rem",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    gap: "1.875rem",
+    //alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 767px)': {
+            padding: "0.625rem 0.625rem 3.75rem 0.625rem",
+            justifyContent: "center",
+            gap: "0.75rem",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            padding: "1rem 0.625rem 5rem 3.125rem",
+            justifyContent: "center",
+            gap: "1.25rem",
+        }
+    }
+});
+
 export const list = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 2rem 0.625rem",
-    flexDirection: "column",
+    width: "auto",
+    padding: "0.625rem 0.625rem 0.625rem 0.625rem",
     alignItems: "center",
-    justifyContent: "center",
-    gap: "0.625rem",
+    gap: "4.375rem",
+    borderBottom: `1px solid ${vars.color.lightText}`,
+    alignSelf: "stretch",
+    '@media': {
+        'screen and (max-width: 767px)': {
+            alignItems: "flex-start",
+            gap: "0.625rem",
+            alignSelf: "stretch",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            alignItems: "center",
+            gap: "2.375rem",
+            alignSelf: "stretch",
+        }
+    }
 });
 
-export const subTitle8 = style({
+export const date = style({
     fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "4.688rem",
+    fontSize: "2.5rem", //4.688rem
     fontWeight: 400,
-    background: "linear-gradient(90deg, #FF07B5 0%, #3300FF 100%)",
+    background: "linear-gradient(90deg, #00FF2A 0%, #EEFF00 100%)",
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     '@media': {
         'screen and (max-width: 767px)': {
-            fontSize: "24px",
+            fontSize: "0.75rem",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
-            fontSize: "36px",
-        }
-    }
-});
-
-export const subTitle9 = style({
-    fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "4.688rem",
-    fontWeight: 400,
-    background: "linear-gradient(90deg, #FF070B 0%, #D000FF 100%)",
-    backgroundClip: "text",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    '@media': {
-        'screen and (max-width: 767px)': {
-            fontSize: "24px",
-        },
-        'screen and (max-width: 1020px) and (min-width: 768px)': {
-            fontSize: "36px",
-        }
-    }
-});
-
-export const bandList = style({
-    display: "flex",
-    padding: "0.625rem 0.625rem 1.875rem 0.625rem",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: "0.625rem",
-    '@media': {
-        'screen and (max-width: 767px)': {
-            padding: "0 0.625rem",
+            fontSize: "1.5rem",
         }
     }
 });
@@ -110,44 +114,29 @@ export const bandList = style({
 export const textEng = style({
     color: vars.color.lightText,
     fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "2.813rem",
+    fontSize: "2.5rem", //2.813rem
     fontWeight: 400,
     '@media': {
         'screen and (max-width: 767px)': {
-            fontSize: "20px",
+            fontSize: "0.75rem",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
-            fontSize: "32px",
+            fontSize: "1.5rem",
         }
     }
 });
 
-export const textJap = style({
-    color: vars.color.lightText,
+export const newest = style({
+    color: "#FF07B5",
     fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "1.875rem",
+    fontSize: "2.5rem",  //1.875rem
     fontWeight: 400,
     '@media': {
         'screen and (max-width: 767px)': {
-            fontSize: "16px",
+            fontSize: "0.75rem",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
-            fontSize: "24px",
-        }
-    }
-});
-
-export const andMore = style({
-    color: vars.color.lightText,
-    fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "2.25rem",
-    fontWeight: 400,
-    '@media': {
-        'screen and (max-width: 767px)': {
-            fontSize: "14px",
-        },
-        'screen and (max-width: 1020px) and (min-width: 768px)': {
-            fontSize: "22px",
+            fontSize: "1.5rem",
         }
     }
 });
