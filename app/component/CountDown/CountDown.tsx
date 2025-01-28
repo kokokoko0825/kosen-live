@@ -15,7 +15,7 @@ export function CountDown(): ReactNode {
     return (
         <div className={styles.countDown}>
             <div className={styles.title}>
-                <div className={styles.text}>あと</div>
+                <div className={styles.text}>開催まであと</div>
             </div>
             <div className={styles.count}>
                 <div className={styles.countText}>{countDown()}</div>
