@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import * as styles from "./styles.css";
 import { Button } from "~/component/Button";
+import { CountDown } from "~/component/CountDown";
 
 export function Hero(): ReactNode {
     return (
@@ -15,6 +16,7 @@ export function Hero(): ReactNode {
             <div className={styles.placeContainer}>
                 <div className={styles.placeText}>in Suzuka Sound Stage</div>
             </div>
+            <CountDown />
         </div>
     );
  }
