@@ -7,7 +7,7 @@ export const page3 = style({
     height: "auto",
     padding: "0.625rem",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
     gap: "0.625rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
