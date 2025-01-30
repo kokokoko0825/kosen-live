@@ -34,7 +34,9 @@ export function Page2(): ReactNode {
                 <div className={styles.bandList}>
                     <div className={styles.textEng}>e/m</div>
                     <div className={styles.textEng}>nobody&apos;s</div>
+                    <div className={styles.textEng}>MAD STMACHACHES</div>
                     <div className={styles.textEng}>r04 Not Found</div>
+                    <div className={styles.textEng}>The Beginner</div>
                     <div className={styles.textJap}>あどばん</div>
                     <div className={styles.textJap}>羅武♥永遠深夜</div>
                 </div>

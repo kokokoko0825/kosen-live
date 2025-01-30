@@ -7,7 +7,8 @@ export const page1 = style({
     height: "auto",
     padding: "0.625rem 0.625rem",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
+    justifyContent: "center",
     gap: "1.25rem",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
@@ -53,37 +54,39 @@ export const title = style({
     }
 });
 
-export const date = style({
+export const aboutContainer = style({
     display: "flex",
-    padding: "2rem 0.625rem 0.625rem 18.75rem",
+    padding: "2rem 0.625rem 0.625rem 0.625rem",
+    flexDirection: "column",
     alignItems: "center",
-    gap: "1.875rem",
-    alignSelf: "stretch",
+    justifyContent: "flex-start",
+    gap: "1.25rem",
+    //alignSelf: "stretch",
     '@media': {
         'screen and (max-width: 767px)': {
-            padding: "0.625rem 3.75rem",
+            padding: "0.625rem 0.625rem 3rem 0.625rem",
+            justifyContent: "center",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
-            padding: "0.625rem 3.75rem 0.625rem 15.625rem",
+            padding: "0.625rem 0.625rem 5rem 0.625rem",
+            justifyContent: "center",
         }
     }
 });
 
+export const date = style({
+    display: "flex",
+    alignItems: "center",
+    gap: "1.875rem",
+    alignSelf: "stretch",
+});
+
 export const open = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 0.625rem 18.75rem",
     alignItems: "flex-start",
     gap: "1.875rem",
     flexShrink: 0,
     alignSelf: "stretch",
-    '@media': {
-        'screen and (max-width: 767px)': {
-            padding: "0.625rem 3.75rem",
-        },
-        'screen and (max-width: 1020px) and (min-width: 768px)': {
-            padding: "0.625rem 3.75rem 0.625rem 15.625rem",
-        }
-    }
 });
 
 export const openTime = style({
@@ -96,18 +99,9 @@ export const openTime = style({
 
 export const place = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 0.625rem 18.75rem",
     alignItems: "flex-start",
     gap: "1.875rem",
     alignSelf: "stretch",
-    '@media': {
-        'screen and (max-width: 767px)': {
-            padding: "0.625rem 3.75rem 3rem 3.75rem",
-        },
-        'screen and (max-width: 1020px) and (min-width: 768px)': {
-            padding: "0.625rem 3.75rem 5rem 15.625rem",
-        }
-    }
 });
 
 export const placeContainer = style({

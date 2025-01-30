@@ -31,8 +31,8 @@ export function Caution(): ReactNode {
                 <div className={styles.title}>Caution</div>
             </div>
             <div className={styles.textContainer}>
-                <div className={styles.text}>・会場には駐車場がありません。そのため、公共交通機関のご利用をお願いします。</div>
-                <div className={styles.text}>・当日はドリンク代として500円を持ってきてください。</div>
+                <div className={styles.text}>・会場には駐車場がありません。そのため、公共交通機関の利用をお願いします。</div>
+                <div className={styles.text}>・当日はドリンク代として500円をチケットとは別で持ってきてください。</div>
             </div>
         </div>
     );

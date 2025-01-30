@@ -81,7 +81,7 @@ export const list = style({
     alignSelf: "stretch",
     '@media': {
         'screen and (max-width: 767px)': {
-            alignItems: "flex-start",
+            alignItems: "center",
             gap: "0.625rem",
             alignSelf: "stretch",
         },

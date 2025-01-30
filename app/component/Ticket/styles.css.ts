@@ -7,8 +7,9 @@ export const ticketContainer = style({
     height: "auto",
     padding: "0.625rem 0.625rem",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
     gap: "1.25rem",
+    justifyContent: "center",
     backgroundColor: vars.color.background,
     boxSizing: "border-box",
     '@media': {
@@ -55,8 +56,9 @@ export const title = style({
 
 export const price = style({
     display: "flex",
-    padding: "0.625rem 0.625rem 0.625rem 18.75rem",
+    padding: "0.625rem 0.625rem 0.625rem 0.625rem",
     alignItems: "flex-start",
+    justifyContent: "center",
     gap: "1.875rem",
     alignSelf: "stretch",
     '@media': {
