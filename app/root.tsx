@@ -59,8 +59,8 @@ export const meta: MetaFunction = () => {
   return [
     { charSet: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
-    { title: "BorderLess" },
-    { name: "description", content: "2025鈴鹿高専卒業ライブ" },
+    { title: "2025卒業ライブ BorderLess" },
+    { name: "description", content: "2025鈴鹿高専卒業ライブin鈴鹿 SOUND STAGE" },
     { name: "robots", content: "index, follow" },
     { name: "og:title", content: "2025鈴鹿高専卒業ライブBorderLess" },
     { name: "og:description", content: "2025鈴鹿高専卒業ライブ" },
