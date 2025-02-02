@@ -19,7 +19,7 @@ export function Layout({ children }: { children: React.ReactNode }): ReactNode {
         <meta name="google-site-verification" content="brDkeRhoxktrjCiqqUefNlNyOKLGHk0Cik9q9MzLv2E" />
         <Meta />
         <Links />
-        <title>2025 鈴鹿高専卒業ライブ</title>
+        <title>2025卒業ライブ BorderLess</title>
       </head>
       <body style={{ margin: 0, padding: 0, }}>
         {children}
