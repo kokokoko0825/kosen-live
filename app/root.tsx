@@ -52,6 +52,14 @@ export const links: LinksFunction = () => {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap",
     },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Irish+Grover&family=RocknRoll+One&display=swap"
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Literata&display=swap"
+    },
   ];
 };
 

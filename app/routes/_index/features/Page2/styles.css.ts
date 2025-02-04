@@ -124,15 +124,30 @@ export const textEng = style({
 
 export const textJap = style({
     color: vars.color.lightText,
-    fontFamily: vars.typography.fontFamily.roboto,
-    fontSize: "1.875rem",
+    fontFamily: vars.typography.fontFamily.jap,
+    fontSize: "43px",
     fontWeight: 400,
     '@media': {
         'screen and (max-width: 767px)': {
-            fontSize: "16px",
+            fontSize: "18px",
         },
         'screen and (max-width: 1020px) and (min-width: 768px)': {
-            fontSize: "24px",
+            fontSize: "30px",
+        }
+    }
+});
+
+export const textGreek = style({
+    color: vars.color.lightText,
+    fontFamily: vars.typography.fontFamily.greek,
+    fontSize: "2.813rem",
+    fontWeight: 400,
+    '@media': {
+        'screen and (max-width: 767px)': {
+            fontSize: "20px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "32px",
         }
     }
 });
