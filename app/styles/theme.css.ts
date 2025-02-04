@@ -15,6 +15,8 @@ export const vars = createThemeContract({
   typography: {
     fontFamily: {
       roboto: "",
+      jap: "",
+      greek: "",
     },
   },
 });
@@ -34,6 +36,8 @@ createGlobalTheme(":root", vars, {
   typography: {
     fontFamily: {
       roboto: "Irish Grover",
+      jap: "RocknRoll One",
+      greek: "Literata",
     },
   },
 });

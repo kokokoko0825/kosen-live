@@ -83,4 +83,22 @@ export const countText = style({
     }
 })
 
+export const affterText = style({
+    fontFamily: vars.typography.fontFamily.jap,
+    fontSize: "4.688rem",
+    fontWeight: 400,
+    background: "linear-gradient( #E80505 0%, #FDD819 100%)",
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    '@media': {
+        'screen and (max-width: 767px)': {
+            fontSize: "25px",
+        },
+        'screen and (max-width: 1020px) and (min-width: 768px)': {
+            fontSize: "40px",
+        }
+    }
+})
+
 // #FF07B5 0%, #7E00FF 60%,  #EEFF00 100%

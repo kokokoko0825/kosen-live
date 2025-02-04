@@ -48,7 +48,7 @@ export function Page2(): ReactNode {
                     <div className={styles.textEng}>alus tale</div>
                     <div className={styles.textEng}>Curious</div>
                     <div className={styles.textEng}>Day my dream</div>
-                    <div className={styles.textEng}>κεεη</div>
+                    <div className={styles.textGreek}>κεεη</div>
                     <div className={styles.textEng}>langue de chat</div>
                     <div className={styles.textJap}>エイチサンジュウ</div>
                     <div className={styles.textJap}>ラルゴ13</div>
