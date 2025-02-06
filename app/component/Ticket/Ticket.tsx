@@ -37,6 +37,8 @@ export function Ticket(): ReactNode {
                     <div className={styles.text}>2 days ticket ¥1500+1dr</div>
                 </div>
             </div>
+            <div className={styles.subText}>* 1dr(ドリンク代): ¥500 *</div>
+            <div className={styles.subText}>* 2 days ticketの場合、ドリンク代が両日ともに必要です *</div>
         </div>
     );
 }
