@@ -94,6 +94,11 @@ export const subTitle9 = style({
     }
 });
 
+export const image = style({
+    content: "url('/images/timetable.png')",
+    width: "100%",
+    height: "auto",
+});
 
 export const textEng = style({
     color: vars.color.lightText,
