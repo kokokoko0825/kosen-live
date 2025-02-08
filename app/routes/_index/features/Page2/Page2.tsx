@@ -38,9 +38,10 @@ export function Page2(): ReactNode {
                     <div className={styles.textEng}>r04 Not Found</div>
                     <div className={styles.textEng}>The Beginner</div>
                     <div className={styles.textJap}>あどばん</div>
+                    <div className={styles.textJap}>ラディッシュ</div>
                     <div className={styles.textJap}>羅武♥永遠深夜</div>
                 </div>
-                <div className={styles.andMore}>and more...</div>
+                <div className={styles.andMore}></div>
             </div>
             <div className={styles.list}>
                 <div className={styles.subTitle9}>3/9(Sun)</div>
@@ -54,7 +55,7 @@ export function Page2(): ReactNode {
                     <div className={styles.textJap}>ラルゴ13</div>
                     <div className={styles.textJap}>教職員バンド</div>
                 </div>
-                <div className={styles.andMore}>and more...</div>
+                <div className={styles.andMore}></div>
             </div>
         </div>
     );
