@@ -95,7 +95,7 @@ export const subTitle9 = style({
 });
 
 export const image = style({
-    content: "url('/images/timetable.png')",
+    content: "url('/images/timetable.svg')",
     width: "100%",
     height: "auto",
 });
