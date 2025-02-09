@@ -34,13 +34,11 @@ export function Information(): ReactNode {
                 <div className={styles.title}>Information</div>
             </div>
             <div className={styles.infoContainer}>
-                {/* 
                 <div className={styles.list}>
-                    <div className={styles.date}>2025.02.08</div>
+                    <div className={styles.date}>2025.02.09</div>
                     <div className={styles.newest}>new!</div>
                     <div className={styles.textEng}>Timetable 公開!</div>
                 </div>
-                */}
                 <div className={styles.list}>
                     <div className={styles.date}>2025.02.08</div>
                     <div className={styles.newest}>new!</div>
@@ -48,7 +46,7 @@ export function Information(): ReactNode {
                 </div>
                 <div className={styles.list}>
                     <div className={styles.date}>2025.02.06</div>
-                    <div className={styles.newest}>    </div>
+                    <div className={styles.newest}>new!</div>
                     <div className={styles.textEng}>Ticketブースの内容を一部変更しました。</div>
                 </div>
                 <div className={styles.list}>
