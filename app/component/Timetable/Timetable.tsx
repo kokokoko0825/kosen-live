@@ -31,10 +31,10 @@ export function Timetable(): ReactNode {
                 <div className={styles.title}>Timetable</div>
             </div>
             <div className={styles.list}>
+                {/*
                 <div className={styles.textEng}>coming soon ...</div>
-                {/* 
-                <p className={styles.image}></p>
                 */}
+                <p className={styles.image}></p>
             </div>
         </div>
     );
