@@ -34,21 +34,29 @@ export function Information(): ReactNode {
                 <div className={styles.title}>Information</div>
             </div>
             <div className={styles.infoContainer}>
+            <div className={styles.list}>
+                    <div className={styles.date}>2025.02.15</div>
+                    <div className={styles.newest}>new!</div>
+                    <div className={styles.textEng}>Timetableを一部変更しました。</div>
+                </div>
                 <div className={styles.list}>
                     <div className={styles.date}>2025.02.09</div>
                     <div className={styles.newest}>new!</div>
                     <div className={styles.textEng}>Timetable 公開!</div>
                 </div>
+                {/*}
                 <div className={styles.list}>
                     <div className={styles.date}>2025.02.08</div>
                     <div className={styles.newest}>new!</div>
                     <div className={styles.textEng}>ラディッシュ &nbsp;参戦決定!</div>
                 </div>
+                */}
                 <div className={styles.list}>
                     <div className={styles.date}>2025.02.06</div>
                     <div className={styles.newest}>new!</div>
                     <div className={styles.textEng}>Ticketブースの内容を一部変更しました。</div>
                 </div>
+                {/* 
                 <div className={styles.list}>
                     <div className={styles.date}>2025.01.30</div>
                     <div className={styles.newest}>    </div>
@@ -59,6 +67,7 @@ export function Information(): ReactNode {
                     <div className={styles.newest}>    </div>
                     <div className={styles.textEng}>Day my dream &nbsp;参戦決定!</div>
                 </div>
+                */}
                 <div className={styles.list}>
                     <div className={styles.date}>2025.01.21</div>
                     <div className={styles.newest}>    </div>
