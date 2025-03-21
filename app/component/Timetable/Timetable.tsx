@@ -34,7 +34,7 @@ export function Timetable(): ReactNode {
                 {/*
                 <div className={styles.textEng}>coming soon ...</div>
                 */}
-                <img className={styles.image}></img>
+                <img src="/images/timetable.png" className={styles.image}></img>
             </div>
         </div>
     );
